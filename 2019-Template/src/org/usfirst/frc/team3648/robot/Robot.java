@@ -16,7 +16,7 @@ import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 public class Robot extends IterativeRobot {
 	//Define the controller and port (0)
 	private Joystick driveController = new Joystick(0);
-	//testing gi
+	//testing g
 	//Define the spark (motor controller) for each wheel. The number in parentheses is the port it is on in the roboRio
 	private Spark frontLeft = new Spark(2);
 	private Spark backLeft = new Spark(0);
