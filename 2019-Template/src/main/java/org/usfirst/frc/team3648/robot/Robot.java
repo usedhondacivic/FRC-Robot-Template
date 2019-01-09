@@ -7,13 +7,13 @@
 
 package org.usfirst.frc.team3648.robot;
 
-import edu.wpi.first.wpilibj.IterativeRobot;
+import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.Spark;
 import edu.wpi.first.wpilibj.SpeedControllerGroup;
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 //test
-public class Robot extends IterativeRobot {
+public class Robot extends TimedRobot {
 	//Define the controller and port (0)
 	private Joystick driveController = new Joystick(0);
 	
