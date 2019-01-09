@@ -18,10 +18,10 @@ public class Robot extends IterativeRobot {
 	private Joystick driveController = new Joystick(0);
 	
 	//Define the spark (motor controller) for each wheel. The number in parentheses is the port it is on in the roboRio
-	private Spark frontLeft = new Spark(2);
-	private Spark backLeft = new Spark(0);
+	private Spark frontLeft = new Spark(0);
+	private Spark backLeft = new Spark(1);
 	private Spark frontRight = new Spark(3);
-	private Spark backRight = new Spark(1);
+	private Spark backRight = new Spark(2);
 	
 	//To do tank drive we need to group the wheels on each side into a group
 	private SpeedControllerGroup leftSide = new SpeedControllerGroup(frontLeft, backLeft);
