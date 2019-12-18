@@ -1,24 +1,23 @@
 package org.usfirst.frc.team3648.robot;
 
-public enum Buttons {
-	A(1),
-	B(2),
-	X(3),
-	Y(4),
-	LEFT_SHOULDER(5),
-	RIGHT_SHOULDER(6),
-	BACK(7),
-	RESTART(8),
-	LEFT_JOYSTICK(9),
-	RIGHT_JOYSTICK(10);
-	
-	private int code;
-	
-	Buttons(int buttonCode){
-		this.code = buttonCode;
-	}
-	
-	int getNumber() {
-		return code;
-	}
+public class Buttons {
+	public static final int A = 1;
+	public static final int B = 2;
+	public static final int X = 3;
+	public static final int Y = 4;
+
+	public static final int LEFT_SHOULDER = 5;
+	public static final int LEFT_TRIGGER = 2;
+	public static final int RIGHT_SHOULDER = 6;
+	public static final int RIGHT_TRIGGER = 3;
+
+	public static final int BACK = 7;
+	public static final int RESTART = 8;
+
+	public static final int LEFT_JOYSTICK_IN = 9;
+	public static final int LEFT_JOYSTICK_X = 0;
+	public static final int LEFT_JOYSTICK_Y = 1;
+	public static final int RIGHT_JOYSTICK_IN = 10;
+	public static final int RIGHT_JOYSTICK_X = 4;
+    public static final int RIGHT_JOYSTICK_Y = 5;
 }

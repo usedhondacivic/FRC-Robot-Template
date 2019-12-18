@@ -12,7 +12,8 @@ import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.Spark;
 import edu.wpi.first.wpilibj.SpeedControllerGroup;
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
-//test
+import org.usfirst.frc.team3648.robot.Buttons;
+
 public class Robot extends TimedRobot {
 	//Define the controller and port (0)
 	private Joystick driveController = new Joystick(0);
@@ -62,9 +63,9 @@ public class Robot extends TimedRobot {
 		drive.tankDrive(driveController.getRawAxis(5)*motorMod, driveController.getRawAxis(1)*motorMod);
 		
 		//Change the speed modifier based on the trigger being held. Lets us have a slow, normal, and fast mode
-		if(driveController.getRawAxis(2)>0.5){
+		if(driveController.getRawAxis(Buttons.LEFT_TRIGGER)>0.5){
 			motorMod = 0.7f;
-		}else if(driveController.getRawAxis(3)>0.5){
+		}else if(driveController.getRawAxis(Buttons.RIGHT_TRIGGER)>0.5){
 			motorMod = 1f;
 		}else{
 			motorMod = 0.85f;
